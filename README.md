@@ -1,2 +1,2 @@
 # laman-lelegard
-Lâmân Lelégard LaSTIG Homepage
+M. Lâmân LELÉGARD - Ingénieur au LaSTIG -
