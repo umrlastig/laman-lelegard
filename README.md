@@ -1,2 +1,2 @@
-# laman-lelegard
-M. Lâmân LELÉGARD - Ingénieur au LaSTIG -
+# llelegard_homepage
+Chercheur LaSTIG : M. Lâmân Lelégard
