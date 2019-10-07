@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Lâmân Lelégard - IGN > LASTIG > GÉOVIS</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
+
+  <!-- scripts on load -->
+  <script src="vendor/d3/d3.min.js"></script>
+  <script src="js/reviewing.js" charset="utf-8"></script>
+  <script src="js/hal.js" charset="utf-8"></script>
+
+</head>
+
+<body id="page-top" onload="reviewingVis('reviewing.json'); getJournalPublicationsAuthor('laman-lelegard');getConfPublicationsAuthor('laman-lelegard');getBookPublicationsAuthor('laman-lelegard');getWorkshopPublicationsAuthor('laman-lelegard');getOtherPublicationsAuthor('laman-lelegard');getInvitedTalksAuthor('laman-lelegard');">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <select class="selectpicker" data-width="fit">
+      <option data-content='<span class="flag-icon flag-icon-uk"></span> EN'>English</option>
+      <option  data-content='<span class="flag-icon flag-icon-fr"></span> FR'>Français</option>
+    </select>
+	<!--
+    <a class="nav-link text-muted subheading lang-en" href="https://umrlastig.github.io/geovis">Team</a>
+    <a class="nav-link text-muted subheading lang-fr" href="https://umrlastig.github.io/geovis">Équipe</a>
+	-->
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Lâmân Lelégard</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/lelegard2.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#about">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#experience">Job Experience</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#experience">Parcours Pro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#education">Education</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#education">Formation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#other">Miscellaneous</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#other">Divers</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+		<div><img border="0" width="100%" alt="Lâmân LELÉGARD" src="img/diapo_kitu.png"></div>
+        <!--<h1 class="mb-0">Lâmân<span class="text-primary">Lelégard</span></h1>-->
+        <div class="subheading mb-5"><br>
+		<table width="100%" border="0">
+		<tr><td align="left">
+		<div class="d-none d-sm-block">
+		✉ — <b>Lâmân LELÉGARD</b> <br>
+			&emsp;&emsp; IGN - Laboratoire MATIS<br>
+			&emsp;&emsp; 73 avenue de Paris<br>
+			&emsp;&emsp; 94165 Saint-Mandé CEDEX
+		</div>
+		</td>
+		<td width="50%" align="right">
+		<div class="d-none d-sm-block">
+		☎ — (+33)1 43 98 00 00 + 74 13<br><br><br>
+		</div>
+		<table border="1"><tr><td align="center">
+		&nbsp;<a href="mailto:laman.lele&#103;ard@ign.fr">laman.le<!--anti@spam.fr!-->legard@ign.fr</a>&nbsp;
+		</td></tr></table>
+		</td>
+		</tr>
+		</table>
+        </div>
+        <p class="lead mb-5 lang-en">Civil Servant Engineer at the French National Mapping Agency</p>
+        <p class="lead mb-5 lang-en">Member of the <a href="https://umrlastig.github.io/geovis">GEOVIS</a> research team</p>
+        <p class="lead mb-5 lang-fr">Ingénieur de Travaux Géographiques et Cartographiques de l'État</p>
+        <p class="lead mb-5 lang-fr">Membre de l'équipe <a href="https://umrlastig.github.io/geovis">GÉOVIS</a></p>
+        <div class="social-icons">
+          <a href="https://fr.linkedin.com/in/l%C3%A2m%C3%A2n-lel%C3%A9gard-8970b4110">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.researchgate.net/profile/L_Lelegard">
+            <i class="fab fa-researchgate"></i>
+          </a>
+          <a href="https://github.com/LLGRD">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://scholar.google.fr/citations?user=vIstjk4AAAAJ">
+            <i class="fab fa-google"></i>
+          </a>
+		  <div class="lead mb-5 lang-en"><i>Not so active on social networks...</i>
+		  </div>
+		  <div class="lead mb-5 lang-fr"><i>Peu présent sur des réseaux sociaux...</i></div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5 lang-en">Job Experience</h2>
+		<h2 class="mb-5 lang-fr">Parcours Pro</h2>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0 lang-en">Research Engineer</h3>
+			<h3 class="mb-0 lang-fr">Ingénieur d'Études</h3>
+            <div class="subheading mb-3">LASTIG, IGN France</div>
+            <p class="lang-en">Since 2008, mostly working on image quality (blur, noise, colour) . . . <i>*TO COMPLETE*</i> . . .</p>
+			<p class="lang-fr">Depuis 2008, travaille sur la qualité image (flou, bruit, couleur) . . . <i>*À COMPLÉTER*</i> . . .</p>
+			<p class="lang-en">Sometime acting as a teacher for the <a target="blank" href="http://www.ensg.eu/Specialized-Master-in-Photogrammetry-Positioning-and-Deformation-Measurement-PPMD">PPMD</a> (Master)
+				<ul class="lang-en">
+					<li>Image processing (2D filtering)</li>
+					<li>DTM manipulation and interpolation</li>
+					<li>Colorimetry (CIE, ICC profiles)</li>
+				</ul>
+			</p>
+			<p class="lang-fr">Intervenant sur certains cours du Mastère <a target="blank" href="http://www.ensg.eu/Mastere-Specialise-R-en-Photogrammetrie-Positionnement-et-Mesure-de-Deformations-PPMD">PPMD</a>
+				<ul class="lang-fr">
+					<li>Traitement d'images (filtrage et Fourier)</li>
+					<li>Manipulation and interpolation des MNT</li>
+					<li>Espaces olorimétriques (CIE, profiles ICC)</li>
+				</ul>
+			</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang-en">January 2018 - Present</span>
+			<span class="text-primary lang-fr">Janvier 2018 - Présent</span>
+          </div>
+        </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0 lang-en">Research Engineer</h3>
+			<h3 class="mb-0 lang-fr">Ingénieur d'Études</h3>
+            <div class="subheading mb-3">MATIS, IGN France</div>
+            <p class="lang-en">Please read description above ↑↑↑</p>
+			<p class="lang-fr">Se reporter à la description ci-dessus ↑↑↑</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang-en">November 2007 - December 2017</span>
+			<span class="text-primary lang-fr">Novembre 2007 - Décembre 2017</span>
+          </div>
+		</div>
+		  
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0 lang-en">Final Year Internship</h3>
+			<h3 class="mb-0 lang-fr">Stage de Fin d'Études</h3>
+			<div class="subheading mb-3 lang-en">Paris Institute of Earth Physics (IPGP)</div>
+            <div class="subheading mb-3 lang-fr">Institut de Physique du Globe de Paris</div>
+			<p class="lang-fr">Sujet : <i>"Résolution des équations de gravito-élasticité sur une base d’ondelettes sphériques"</i></p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang-en">Summer 2007</span>
+			<span class="text-primary lang-fr">Été 2007</span>
+          </div>
+		</div>
+		  
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0 lang-en">Engineer Internship</h3>
+			<h3 class="mb-0 lang-fr">Stage Ingénieur</h3>
+			<div class="subheading mb-3 lang-en">Belgium Royal Observatory - Brussels</div>
+            <div class="subheading mb-3 lang-fr">Observatoire Royal de Belgique - Bruxelles</div>
+			<p class="lang-fr">Sujet : <i>"Analyse locale par admittance du champ gravitationnel de la planète Mars"</i></p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang-en">Summer 2006</span>
+			<span class="text-primary lang-fr">Été 2006</span>
+          </div>
+		</div>
+		 
+      </div>
+    </section>
+	
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5 lang-en">Educational Background</h2>
+		<h2 class="mb-5 lang-fr">Études et Formations</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+		  <div class="resume-content">
+            <h3 class="mb-0 lang-en">ENSG</h3>
+			<h3 class="mb-0 lang-fr">ENSG</h3>
+			<div class="subheading mb-3 lang-en">Specialized Master <a target="blank" href="http://www.ensg.eu/Specialized-Master-in-Photogrammetry-Positioning-and-Deformation-Measurement-PPMD">PPMD</a></div>
+			<div class="subheading mb-3 lang-fr">Mastère Spécialisé <a target="blank" href="http://www.ensg.eu/Mastere-Specialise-R-en-Photogrammetrie-Positionnement-et-Mesure-de-Deformations-PPMD">PPMD</a></div>
+			<div class="lang-en">Major in Geodesy</div>
+			<div class="lang-fr">Spécialisation en Géodesie</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang-en">2006 - 2007</span>
+			<span class="text-primary lang-fr">2006 - 2007</span>
+          </div>
+		</div>
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0 lang-en">ENSG</h3>
+			<h3 class="mb-0 lang-fr">ENSG</h3>
+            <div class="subheading mb-3 lang-en">National Mapping Agency Engineering School</div>
+			<div class="subheading mb-3 lang-fr">Cycle Ingénieur des Travaux (fonctionnaire)</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang-en">2004 - 2007</span>
+			<span class="text-primary lang-fr">2004 - 2007</span>
+          </div>
+		</div>
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+			<h3 class="mb-0 lang-en">Higher School Preparatory Classes</h3>
+            <h3 class="mb-0 lang-fr">Classe Préparatoire aux Grandes Écoles</h3>
+            <div class="subheading mb-3">Lycée Charlemagne - Paris 4e</div>
+			<div class="lang-en">(Maths & Physics)</div>
+			<div class="lang-fr">(Maths - Physiques)</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary lang-en">2001 - 2004</span>
+			<span class="text-primary lang-fr">2001 - 2004</span>
+          </div>
+        </div>
+	  </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+      <div class="w-100">
+        <h2 class="mb-5">Publications</h2>
+
+        <div class="subheading mb-3 mt-3">Journals</div>
+        <ol id="pubJ" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Conferences</div>
+        <ol id="pubC" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Books and Chapters</div>
+        <ol id="pubB" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Workshops and Posters</div>
+        <ol id="pubW" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Other Publications (Technical Reports, Dissertations, Dissemination)</div>
+        <ol id="pubO" class="sub">
+        </ol>
+
+      </div>
+    </section>
+	
+	<hr class="m-0">
+
+	<!--
+    <section class="section appear clearfix p-3 p-lg-5">
+      <div class="w-100">
+        <h2 class="mb-5 mt-5">Invited Talks</h2>
+        <ol id="talks" class="sub">
+        </ol>
+      </div>
+    </section>
+
+    <hr class="m-0">
+	-->
+	
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="other">
+      <div class="w-100">
+        <h2 class="mb-5 lang-en">Miscellaneous</h2>
+		<h2 class="mb-5 lang-fr">Divers</h2>
+
+        <div class="subheading mb-3 mt-3 lang-en">Internship Supervisions</div>
+		<div class="subheading mb-3 mt-3 lang-fr">Encadrements de Stages</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check-square"></i>
+            <b>2009 - Emeric DELAYGUE</b> (ETI, CPE Lyon)
+			<br><i>Déconvolution de flou de filé sur des images aériennes</i><br><br></li>
+          <li>
+            <i class="fa-li fa fa-check-square"></i>
+            <b>2012 - Vincent DAVAL</b> (Mastère PPMD, ENSG)
+			<br><i>Restauration d’images prises de nuit avec un système d’acquisition mobile</i></li>
+        </ul>
+
+		<!--
+        <div class="subheading mb-3 mt-3">Reviewing</div>
+        <div id="reviewings" class="sub">
+            <div id="revj">
+            </div>
+            <div id="revc">
+            </div>
+            <div id="revb">
+            </div>
+        </div>
+		-->
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery.isotope.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.js"></script>
+
+</body>
+
+</html>
