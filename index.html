@@ -28,11 +28,13 @@
   <script src="vendor/d3/d3.min.js"></script>
   <script src="js/reviewing.js" charset="utf-8"></script>
   <script src="js/hal.js" charset="utf-8"></script>
-	
-  <!-- Teste de PopUp provisoire pour confinement CoronaVirus -->
-  <script type='text/javascript'>
-	var popup_custom_data = {
-		"content":"<div id="ouibounce-modal" class="cm-popup-modal">
+
+</head>
+
+<body id="page-top" onload="reviewingVis('reviewing.json'); getJournalPublicationsAuthor('laman-lelegard');getConfPublicationsAuthor('laman-lelegard');getBookPublicationsAuthor('laman-lelegard');getWorkshopPublicationsAuthor('laman-lelegard');getOtherPublicationsAuthor('laman-lelegard');getInvitedTalksAuthor('laman-lelegard');">
+
+	<!-- Teste de PopUp provisoire pour confinement CoronaVirus -->
+	<div id="ouibounce-modal" class="cm-popup-modal">
 		<div class="underlay"></div>
 		<div class="modal">
 		<div id="close_button" class="popupflyin-close-button"></div>
@@ -42,12 +44,7 @@
 		<h2 dir='ltr'></h2>
 		<h2 dir='ltr'>Winter is comming...
 		</h2><h2 dir='ltr'></h2>
-		</div>","showMethod":"always","resetTime":"7","secondsToShow":"0","minDeviceWidth":"0"};
-  </script>
-
-</head>
-
-<body id="page-top" onload="reviewingVis('reviewing.json'); getJournalPublicationsAuthor('laman-lelegard');getConfPublicationsAuthor('laman-lelegard');getBookPublicationsAuthor('laman-lelegard');getWorkshopPublicationsAuthor('laman-lelegard');getOtherPublicationsAuthor('laman-lelegard');getInvitedTalksAuthor('laman-lelegard');">
+	</div>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <select class="selectpicker" data-width="fit">
