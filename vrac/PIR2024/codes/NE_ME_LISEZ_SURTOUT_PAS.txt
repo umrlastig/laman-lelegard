@@ -1,0 +1,53 @@
+
+Je constate que vous êtes en train de lire ça quand même...  ;-)
+
+
+Ce dossier comprend plusieurs fichiers, essentiellement des scipts GNU Octave 
+(donc presque du MatLab en fait) qui ont servi à faire la petite animation de
+la page de PIR "Déformation de Cartes".
+
+-plan1.png-
+  Image (carte des environs de la gare de Noisy-Champs)
+
+-pointage1.m-
+  Script de tracé du chemin entre Gare RER et ENSG/ENPC
+-pointage1.txt-
+  Liste des points du tracé obtenu par le script éponyme
+
+-chemin1.m-
+  Test de 3 interpolations du tracé "pointage1.txt"
+  Retourne une image "chemin1.png"
+
+-chemin2.m-
+  Interpolation du même tracé mais par grille élastique.
+  En sortie, un dossier "chemin2" avec des images de cicuits.
+  Chaque circuit est lié à un coefficient de lissage.
+  Grandeurs listées pour chaque coeff :
+    - distance max au tracé linéaire
+    - courbure min du tracé approché par grille élastique
+
+-chemin2a.m- : Script roche de "chemin2.m" (sortie : fichier texte)
+
+-chemin3.m- : Script avec le circuit optimal
+
+-fleche_60.png-
+  Image (flèche du Nord)
+
+-carte1.m- : carte déformée avec "chemin3"
+-carte2.m- : carte déformée avec "chemin2a"
+
+
+EN BREF :
+
+On cherche ici une courbe proche du tracé linéaire et avec
+un rayon de courbure pas trop petit.
+
+- Pourquoi ?
+
+La déformation sur fait comme un scan perpendiculaire à la courbe.
+* On peut y voir une analogie avec les capteurs barrettes *
+
+
+
+____________________________________________________________________________
+Fini de rédigé le 23/09/2025 à 18:30
